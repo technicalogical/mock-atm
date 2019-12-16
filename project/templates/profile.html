@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title" style="text-align: left">
+  Welcome Account {{ account }}
+</h1>
+
+<form method="POST" action="/balance">
+  <button class="button is-block is-info is-large is-large">CHECK YOUR BALANCE</button>
+</form>
+
+{% endblock %}
